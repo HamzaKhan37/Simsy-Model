@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "Model-API.py",  // Pointing to your Flask entry file
+      "src": "Model-API.py", 
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "Model-API.py"  // Directing requests to your Flask app
+      "dest": "Model-API.py"  
     }
   ]
 }
